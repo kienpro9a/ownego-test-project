@@ -90,8 +90,13 @@ const RightSide = (props) => {
 export default RightSide
 
 const MainContainer = styled.div`
+  min-height: 100vh;
   background-color: #f0f0f0;
-  width: 80%;
-  height: 200vh;
-  float: left;
+  .ant-checkbox-wrapper{
+    margin-right: 20px;
+    font-size: 26px;
+    .ant-checkbox{
+      margin-right: 20px;
+    }
+  }
 `;

@@ -39,11 +39,9 @@ const LeftSide = (props) => {
 export default LeftSide;
 
 const MenuContainer = styled.div`
+  min-height: 100vh;
   background-color: #1d2c53;
-  width: 20%;
-  height: 200vh;
-  overflow: hidden;
-  float: left;
+  height:100%;
   .logo{
     color:#ffffff;
     line-height: 100px;
@@ -51,14 +49,24 @@ const MenuContainer = styled.div`
     font-size: 40px;
     margin-bottom: 20px;
   }
-  .ant-menu-item{
-    line-height: 80px;
-    font-size: 27px;
-    color:#777d97;
-    cursor: pointer;
+  .ant-menu{
+    background-color: #1d2c53 !important;
+    border: none !important;
+    .ant-menu-item{
+      line-height: 80px!important;
+      color:#777d97!important;
+      cursor: pointer;
+      .ant-menu-title-content{
+        font-size: 24px;
+      }
+    }
+    .ant-menu-item-selected{
+      color:#f6f5fa !important;
+      background-color: #304476!important;
+    }
+    .ant-menu-inline{
+      display: none !important;
+    }
   }
-  .ant-menu-item-selected{
-    color:#f6f5fa !important;
-    background-color: #304476;
-  }
+  
 `;

@@ -17,11 +17,13 @@
 }
 
 .tool {
+    display: flex;
     height: 80px;
     margin: 40px 0;
+    justify-content: space-between;
 }
 
-button {
+.tool button {
     background-color: #1d2c53;
     padding: 20px 50px;
     color: #ffffff;
@@ -30,22 +32,23 @@ button {
     cursor: pointer;
     border-radius: 5px;
     outline: none;
-    float: left;
 }
 
 .sort {
-    float: right;
+    display: flex;
+
 }
 
-.sortText {
+.sort .sortText {
     font-size: 20px;
     font-weight: 600;
     color: #1d2c53;
     float: left;
-    padding: 20px 50px;
+    padding: 20px 30px;
+    margin-bottom: 12px;
 }
 
-select {
+.sort select {
     background-color: #e4e4e4;
     float: left;
     padding: 20px 20px;
