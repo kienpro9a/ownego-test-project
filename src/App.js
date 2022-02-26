@@ -1,24 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import RightSide from "./components/rightSide";
+import LeftSide from "./components/leftSide";
+import React,{useState} from 'react'
+// import dataStores from './stores.json';
+// import _ from 'lodash'
+
+
 
 function App() {
+  const [currentStore, setCurrentStore] = useState(0);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <LeftSide setCurrentStore={setCurrentStore}/>
+      <RightSide currentStore={currentStore}/>
+    </>
   );
 }
 
