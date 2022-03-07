@@ -82,6 +82,11 @@
     flex-wrap: wrap;
 }
 
+.products .title{
+    font-size: 50px;
+    color: #ff6666;
+}
+
 .product {
     position: relative;
     background-color: #fff;

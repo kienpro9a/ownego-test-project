@@ -5,7 +5,7 @@ const Products = (props) => {
   return (
     <div className='products'>
       {
-        _.isEmpty(props.dataStore) ? <div>khong co san pham</div> :
+        _.isEmpty(props.dataStore) ? <div className='title'>Không có sản phẩm</div> :
         props.dataStore.map((info, key) => {
           return (
             <div className='product' key={key}>
